@@ -48,11 +48,11 @@ public class OperationControllerTest {
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.writeValueAsString(obj);
     }
-    protected <T> T mapFromJson(String json, Class<T> clazz)
+    protected <T> T mapFromJson(String json, Class<T> classe)
             throws JsonParseException, JsonMappingException, IOException {
 
         ObjectMapper objectMapper = new ObjectMapper();
-        return objectMapper.readValue(json, clazz);
+        return objectMapper.readValue(json, classe);
     }
 
     @Test
@@ -95,21 +95,7 @@ public class OperationControllerTest {
     }
 
 
-/*
-    @Test
-    @Order(6)
-    public void getOperationBancaireBySourceAndDest() throws Exception {
-        String uri = "/operation-bancaire/source/EUR/dest/USD";
-        MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.get(uri)
-                .accept(MediaType.APPLICATION_JSON_VALUE)).andReturn();
 
-        int status = mvcResult.getResponse().getStatus();
-        assertEquals(200, status);
-        String content = mvcResult.getResponse().getContentAsString();
-        OperationBancaire[] OperationBancaires= mapFromJson(content, OperationBancaire[].class);
-        assertEquals(4, OperationBancaires.length);
-    }
-*/
     @Test
     @Order(7)
     public void getOperationBancaireBySourceAndDestAndDate() throws Exception {
@@ -125,24 +111,6 @@ public class OperationControllerTest {
     }
 
 
-
-
-/*
-    @Test
-    @Order(15)
-    public void updateMontantForOperationBancaire() throws Exception {
-        String uri = "/operation-bancaire/id/1237/montant/200.0";
-
-        MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.put(uri)
-                .accept(MediaType.APPLICATION_JSON_VALUE)).andReturn();
-
-        int status = mvcResult.getResponse().getStatus();
-        String content = mvcResult.getResponse().getContentAsString();
-        OperationBancaire _OperationBancaire = mapFromJson(content, OperationBancaire.class);
-        assertEquals(200, status);
-        assertEquals(200.0, _OperationBancaire.getMontant());
-    }
-*/
 
     @Test
     @Order(16)
