@@ -179,7 +179,7 @@ public class OperationController {
     }
 
 
-    // curl -X PUT "http://localhost:8088/operation-bancaire/id/1243/montant/4000"
+    // "http://localhost:8088/operation-bancaire/id/1/montant/4000"
     @PutMapping("/operation-bancaire/id/{id}/montant/{montant}")
     public ResponseEntity<OperationBancaire> updateMontantForOperationBancaire(@PathVariable long id, @PathVariable double montant) {
         Optional<OperationBancaire> OperationBancaireData = repository.findById(id);
