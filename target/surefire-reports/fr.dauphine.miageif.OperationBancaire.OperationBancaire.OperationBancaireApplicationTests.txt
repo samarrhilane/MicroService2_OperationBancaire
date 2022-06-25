@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: fr.dauphine.miageif.OperationBancaire.OperationBancaire.OperationBancaireApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.589 s - in fr.dauphine.miageif.OperationBancaire.OperationBancaire.OperationBancaireApplicationTests

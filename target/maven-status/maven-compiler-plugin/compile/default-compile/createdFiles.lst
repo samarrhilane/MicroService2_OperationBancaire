@@ -1,0 +1,4 @@
+fr\dauphine\miageif\OperationBancaire\OperationBancaire\OperationBancaireApplication.class
+fr\dauphine\miageif\OperationBancaire\OperationBancaire\Model\OperationBancaire.class
+fr\dauphine\miageif\OperationBancaire\OperationBancaire\Repository\OperationBancaireRepository.class
+fr\dauphine\miageif\OperationBancaire\OperationBancaire\Controller\OperationController.class
