@@ -26,7 +26,7 @@ public class OperationController {
     
     // POST
     @PostMapping(value = "/operation-bancaire")
-    public ResponseEntity<OperationBancaire> createCompteBancaire(@RequestBody OperationBancaire OperationBancaire){
+    public ResponseEntity<OperationBancaire> createOperationBancaire(@RequestBody OperationBancaire OperationBancaire){
         return ResponseEntity.ok().body(this.repository.save(OperationBancaire));
     }
 
