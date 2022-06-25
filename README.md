@@ -38,5 +38,5 @@ to get all bank operations exist
 ## 5. Set up Docker
 
 ```
-docker build -t OperationBancaire 
+docker build -t OperationBancaire-0.0.1-SNAPSHOT.jar 
 ```
